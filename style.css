@@ -1,0 +1,96 @@
+body {
+    background: url('images/large-triangles.svg');
+    background-size: cover;  /* Ensures full coverage */
+    background-repeat: no-repeat;  /* Prevents tiling */
+    background-position: center center;  /* Centers the image */
+    height: 100vh;  /* Ensures full viewport height */
+    width: 100vw;   /* Ensures full viewport width */
+    margin: 0;  /* Removes default margin */
+}
+
+/* Card styling */
+.card-positon{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    width: 350px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Header background with texture */
+.card-header {
+    background: url('images/bg-pattern-card.svg'), 
+                linear-gradient(135deg, #1da8a3, #009688);
+    height: 100px;
+    position: relative;
+}
+
+/* Profile image overlapping */
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid white;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Card body styling */
+.card-body {
+    padding: 70px 20px 20px;
+}
+
+/* Name and Age */
+.card-body h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card-body h3 span {
+    font-weight: normal;
+    color: gray;
+    margin-left: 5px;
+}
+
+/* Location */
+.card-body p {
+    font-size: 14px;
+    color: gray;
+    margin-top: 5px;
+}
+
+/* Horizontal line */
+hr {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+}
+
+/* Stats section */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.stats div {
+    text-align: center;
+}
+
+.stats strong {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+}
